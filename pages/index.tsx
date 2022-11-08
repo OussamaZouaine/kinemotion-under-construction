@@ -36,7 +36,6 @@ export default function Home() {
                 )}
             </header>
 
-            {/* <div className="w-screen h-screen absolute bg-black top-0 left-0 -z-20 opacity-60 bg-gradient-to-tl from-primary/70 to-secondary/10"></div> */}
             <main className="flex flex-col justify-around items-center h-[70vh] text-center mt-12">
                 <div className="my-8">
                     <h1 className="font-space-grotesk text-4xl sm:text-5xl md:text-6xl font-bold max-w-5xl uppercase mb-4">

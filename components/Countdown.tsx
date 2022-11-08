@@ -26,14 +26,6 @@ export default function Countdown() {
             setHours(hours);
             setMinutes(minutes);
             setSeconds(seconds);
-
-            // console.log(`${days}day, ${hours}h, ${minutes}min, ${seconds}s`);
-
-            // if (distance < 0) {
-            //     clearInterval(countdown);
-            //     // document.getElementById("demo").innerHTML = "EXPIRED";
-            //     container.innerHTML = `<img src='https://i.pinimg.com/originals/af/40/b8/af40b84a852a8f81ad065c0d530fa7b9.gif' />`;
-            // }
         }, 1000);
     }, [days, hours, minutes, seconds]);
 
