@@ -21,7 +21,7 @@ export default function Document() {
                 ></link>
             </Head>
 
-            <body className="min-h-screen dark:bg-primary bg-secondary dark:text-secondary text-primary container md:bg-pattern-light md:dark:bg-pattern-dark bg-center bg-cover overflow-hidden">
+            <body className="min-h-screen dark:bg-primary bg-secondary dark:text-secondary text-primary container md:dark:bg-pattern-light md:bg-pattern-dark bg-center bg-cover overflow-hidden">
                 <Main />
                 <NextScript />
             </body>

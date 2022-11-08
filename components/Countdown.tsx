@@ -40,25 +40,25 @@ export default function Countdown() {
     return (
         <div className="grid grid-cols-2 gap-y-10 sm:flex sm:flex-row sm:justify-center gap-x-20 sm:gap-x-24 md:gap-x-32">
             <p className="flex flex-col items-center text-xl md:text-2xl capitalize gap-y-4 w-12">
-                <span className="text-white  font-medium text-6xl md:text-8xl">
+                <span className="dark:text-white text-accent font-medium text-6xl md:text-8xl">
                     {days.toString().padStart(2, '0')}
                 </span>{' '}
                 days
             </p>
             <p className="flex flex-col items-center text-xl md:text-2xl capitalize gap-y-4 w-12">
-                <span className="text-white  font-medium text-6xl md:text-8xl">
+                <span className="dark:text-white text-accent  font-medium text-6xl md:text-8xl">
                     {hours.toString().padStart(2, '0')}
                 </span>{' '}
                 Hours
             </p>
             <p className="flex flex-col items-center text-xl md:text-2xl capitalize gap-y-4 w-12">
-                <span className="text-white  font-medium text-6xl md:text-8xl">
+                <span className="dark:text-white text-accent  font-medium text-6xl md:text-8xl">
                     {minutes.toString().padStart(2, '0')}
                 </span>{' '}
                 minutes
             </p>
             <p className="flex flex-col items-center text-xl md:text-2xl capitalize gap-y-4 w-12">
-                <span className="text-white  font-medium text-6xl md:text-8xl">
+                <span className="dark:text-white text-accent  font-medium text-6xl md:text-8xl">
                     {seconds.toString().padStart(2, '0')}
                 </span>{' '}
                 seconds
