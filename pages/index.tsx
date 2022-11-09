@@ -8,7 +8,6 @@ export default function Home() {
 
     useEffect(() => {
         setDark(window.matchMedia('(prefers-color-scheme: dark)').matches);
-        console.log(dark);
     }, [dark]);
 
     return (
@@ -52,65 +51,109 @@ export default function Home() {
 
                 {dark ? (
                     <div className="socials mt-16 flex justify-center space-x-8">
-                        <Image
-                            src={'/icons/light/linkedin.svg'}
-                            alt={''}
-                            width={20}
-                            height={20}
-                            className="cursor-pointer"
-                        />
-                        <Image
-                            src={'/icons/light/gmail.svg'}
-                            alt={''}
-                            width={20}
-                            height={20}
-                            className="cursor-pointer"
-                        />
-                        <Image
-                            src={'/icons/light/whatsapp.svg'}
-                            alt={''}
-                            width={20}
-                            height={20}
-                            className="cursor-pointer"
-                        />
-                        <Image
-                            src={'/icons/light/facebook.svg'}
-                            alt={''}
-                            width={20}
-                            height={20}
-                            className="cursor-pointer"
-                        />
+                        <a
+                            href="https://www.linkedin.com/company/mediacaris/"
+                            target="_blank"
+                            className="flex justify-center items-center"
+                        >
+                            <Image
+                                src={'/icons/light/linkedin.svg'}
+                                alt={''}
+                                width={20}
+                                height={20}
+                                className="cursor-pointer"
+                            />
+                        </a>
+                        <a
+                            href="mailto:contact@mediacaris.com"
+                            target="_blank"
+                            className="flex justify-center items-center"
+                        >
+                            <Image
+                                src={'/icons/light/gmail.svg'}
+                                alt={''}
+                                width={20}
+                                height={20}
+                                className="cursor-pointer"
+                            />
+                        </a>
+                        <a
+                            href="#"
+                            className="flex justify-center items-center"
+                        >
+                            <Image
+                                src={'/icons/light/whatsapp.svg'}
+                                alt={''}
+                                width={20}
+                                height={20}
+                                className="cursor-pointer"
+                            />
+                        </a>
+                        <a
+                            href="#"
+                            className="flex justify-center items-center"
+                        >
+                            <Image
+                                src={'/icons/light/facebook.svg'}
+                                alt={''}
+                                width={20}
+                                height={20}
+                                className="cursor-pointer w-4"
+                            />
+                        </a>
                     </div>
                 ) : (
                     <div className="socials mt-16 flex justify-center space-x-8">
-                        <Image
-                            src={'/icons/dark/linkedin.svg'}
-                            alt={''}
-                            width={20}
-                            height={20}
-                            className="cursor-pointer"
-                        />
-                        <Image
-                            src={'/icons/dark/gmail.svg'}
-                            alt={''}
-                            width={20}
-                            height={20}
-                            className="cursor-pointer"
-                        />
-                        <Image
-                            src={'/icons/dark/whatsapp.svg'}
-                            alt={''}
-                            width={20}
-                            height={20}
-                            className="cursor-pointer"
-                        />
-                        <Image
-                            src={'/icons/dark/facebook.svg'}
-                            alt={''}
-                            width={20}
-                            height={20}
-                            className="cursor-pointer"
-                        />
+                        <a
+                            href="https://www.linkedin.com/company/mediacaris/"
+                            target="_blank"
+                            className="flex justify-center items-center"
+                        >
+                            <Image
+                                src={'/icons/dark/linkedin.svg'}
+                                alt={''}
+                                width={20}
+                                height={20}
+                                className="cursor-pointer"
+                            />
+                        </a>
+                        <a
+                            href="mailto:contact@mediacaris.com"
+                            target="_blank"
+                            className="flex justify-center items-center"
+                        >
+                            <Image
+                                src={'/icons/dark/gmail.svg'}
+                                alt={''}
+                                width={20}
+                                height={20}
+                                className="cursor-pointer"
+                            />
+                        </a>
+                        <a
+                            href="#"
+                            className="flex justify-center items-center"
+                        >
+                            <Image
+                                src={'/icons/dark/whatsapp.svg'}
+                                alt={''}
+                                width={20}
+                                height={20}
+                                className="cursor-pointer"
+                            />
+                        </a>
+                        <a
+                            href="#"
+                            className="flex justify-center items-center"
+                        >
+                            <Image
+                                src={'/icons/dark/facebook.svg'}
+                                alt={''}
+                                width={20}
+                                height={20}
+                                className="cursor-pointer w-4"
+                            />
+                        </a>
                     </div>
                 )}
             </main>

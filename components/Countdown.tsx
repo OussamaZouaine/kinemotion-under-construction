@@ -7,8 +7,8 @@ export default function Countdown() {
     const [seconds, setSeconds] = useState<number>(0);
 
     useEffect(() => {
-        const christmas = new Date('dec 03, 2022 00:00:00').getTime();
-        let countdown = setInterval(function () {
+        const christmas = new Date('dec 10, 2022 00:00:00').getTime();
+        setInterval(function () {
             const now = new Date().getTime();
 
             let distance = christmas - now;
