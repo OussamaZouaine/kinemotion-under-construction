@@ -7,7 +7,7 @@ export default function Countdown() {
     const [seconds, setSeconds] = useState<number>(0);
 
     useEffect(() => {
-        const christmas = new Date('dec 10, 2022 00:00:00').getTime();
+        const christmas = new Date('jan 20, 2023 00:00:00').getTime();
         setInterval(function () {
             const now = new Date().getTime();
 
