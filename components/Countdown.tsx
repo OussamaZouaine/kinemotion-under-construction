@@ -7,7 +7,7 @@ export default function Countdown() {
     const [seconds, setSeconds] = useState<number>(0);
 
     useEffect(() => {
-        const christmas = new Date('jan 20, 2023 00:00:00').getTime();
+        const christmas = new Date('feb 10, 2023 00:00:00').getTime();
         setInterval(function () {
             const now = new Date().getTime();
 
@@ -32,25 +32,25 @@ export default function Countdown() {
     return (
         <div className="grid grid-cols-2 gap-y-10 sm:flex sm:flex-row sm:justify-center gap-x-20 sm:gap-x-24 md:gap-x-32">
             <p className="flex flex-col items-center text-xl md:text-2xl capitalize gap-y-4 w-12">
-                <span className="dark:text-white text-accent font-medium text-6xl md:text-8xl">
+                <span className="text-brandColorDark font-bold text-4xl md:text-7xl">
                     {days.toString().padStart(2, '0')}
                 </span>{' '}
                 days
             </p>
             <p className="flex flex-col items-center text-xl md:text-2xl capitalize gap-y-4 w-12">
-                <span className="dark:text-white text-accent  font-medium text-6xl md:text-8xl">
+                <span className="text-brandColorDark font-bold text-4xl md:text-7xl">
                     {hours.toString().padStart(2, '0')}
                 </span>{' '}
                 Hours
             </p>
             <p className="flex flex-col items-center text-xl md:text-2xl capitalize gap-y-4 w-12">
-                <span className="dark:text-white text-accent  font-medium text-6xl md:text-8xl">
+                <span className="text-brandColorDark  font-bold text-4xl md:text-7xl">
                     {minutes.toString().padStart(2, '0')}
                 </span>{' '}
                 minutes
             </p>
             <p className="flex flex-col items-center text-xl md:text-2xl capitalize gap-y-4 w-12">
-                <span className="dark:text-white text-accent  font-medium text-6xl md:text-8xl">
+                <span className="text-brandColorDark  font-bold text-4xl md:text-7xl">
                     {seconds.toString().padStart(2, '0')}
                 </span>{' '}
                 seconds

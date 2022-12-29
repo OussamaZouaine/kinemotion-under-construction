@@ -13,10 +13,11 @@ module.exports = {
             colors: {
                 primary: '#060a1c',
                 secondary: '#fefefe',
-                accent: '#0f1cba',
+                brandColorDark: '#974667',
+                brandColorLight: '#F8ADA4',
             },
             fontFamily: {
-                'space-grotesk': ['Space Grotesk', 'sans-serif'],
+                montserrat: ['Montserrat', 'sans-serif'],
             },
             backgroundImage: {
                 'pattern-light': "url('/images/bg-light.svg')",

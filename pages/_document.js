@@ -16,12 +16,12 @@ export default function Document() {
                     crossOrigin=""
                 />
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
                     rel="stylesheet"
-                ></link>
+                />
             </Head>
 
-            <body className="min-h-screen dark:bg-primary bg-secondary dark:text-secondary text-primary container md:dark:bg-pattern-light md:bg-pattern-dark bg-center bg-cover overflow-x-hidden lg:overflow-hidden">
+            <body className="min-h-screen bg-secondary font-montserrat  text-primary container  overflow-x-hidden lg:overflow-hidden">
                 <Main />
                 <NextScript />
             </body>
